@@ -13,6 +13,7 @@
 #import "ToolSegmentViewController.h"
 #import "ToolMenuFirstViewController.h"
 #import "YZApplyTypeVacationVC.h"
+#import "ToolCALayerAnimationViewController.h"
 
 @interface ViewController ()
 
@@ -66,6 +67,16 @@
     [pickerViewBtn addTarget:self action:@selector(pushToPickerVC) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:pickerViewBtn];
 
+    UIButton * layerAnimationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [layerAnimationBtn setFrame:CGRectMake(0, 0, 200, 50)];
+    [layerAnimationBtn setCenter:CGPointMake(SCREEN_WID/2, SCREEN_HEI/2 + 30)];
+    [layerAnimationBtn setTitle:@"layer动画" forState:UIControlStateNormal];
+    [layerAnimationBtn setBackgroundColor:[UIColor grayColor]];
+    layerAnimationBtn.layer.cornerRadius = 4;
+    layerAnimationBtn.layer.masksToBounds = YES;
+    [layerAnimationBtn addTarget:self action:@selector(pushToLayerAnimationVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:layerAnimationBtn];
+    
 }
 
 //跳转统计图
@@ -94,6 +105,13 @@
     
     YZApplyTypeVacationVC * toolPickerVC = [[YZApplyTypeVacationVC alloc] init];
     [self.navigationController pushViewController:toolPickerVC animated:YES];
+}
+
+//跳转layerAnimationView
+- (void)pushToLayerAnimationVC {
+    
+    ToolCALayerAnimationViewController * toolCALayerVC = [[ToolCALayerAnimationViewController alloc] init];
+    [self.navigationController pushViewController:toolCALayerVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

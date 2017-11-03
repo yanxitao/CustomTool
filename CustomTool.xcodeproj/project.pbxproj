@@ -111,6 +111,11 @@
 		711A984E1FA9696100A96552 /* ApplyOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A98461FA9696100A96552 /* ApplyOneTableViewCell.m */; };
 		711A98541FA9761A00A96552 /* YZDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A98511FA9761900A96552 /* YZDateModel.m */; };
 		711A98551FA9761A00A96552 /* YZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A98531FA9761900A96552 /* YZPickerView.m */; };
+		711A98781FA9D3D000A96552 /* ToolCALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A98761FA9D3D000A96552 /* ToolCALayerAnimationViewController.m */; };
+		711A98791FA9D3D000A96552 /* ToolCALayerAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711A98771FA9D3D000A96552 /* ToolCALayerAnimationViewController.xib */; };
+		719AE3AB1FAAC458009DC99F /* UIView+YXTTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 719AE3A91FAAC457009DC99F /* UIView+YXTTransform.m */; };
+		719AE3AF1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719AE3AD1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.m */; };
+		719AE3B01FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 719AE3AE1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.xib */; };
 		71E037F81FA827B9000BE00C /* ToolPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E037F61FA827B9000BE00C /* ToolPieChartViewController.m */; };
 		71E037F91FA827B9000BE00C /* ToolPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E037F71FA827B9000BE00C /* ToolPieChartViewController.xib */; };
 		71E037FE1FA827F9000BE00C /* ToolSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E037FC1FA827F9000BE00C /* ToolSegmentViewController.m */; };
@@ -356,6 +361,14 @@
 		711A98511FA9761900A96552 /* YZDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDateModel.m; sourceTree = "<group>"; };
 		711A98521FA9761900A96552 /* YZPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZPickerView.h; sourceTree = "<group>"; };
 		711A98531FA9761900A96552 /* YZPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZPickerView.m; sourceTree = "<group>"; };
+		711A98751FA9D3D000A96552 /* ToolCALayerAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolCALayerAnimationViewController.h; sourceTree = "<group>"; };
+		711A98761FA9D3D000A96552 /* ToolCALayerAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolCALayerAnimationViewController.m; sourceTree = "<group>"; };
+		711A98771FA9D3D000A96552 /* ToolCALayerAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolCALayerAnimationViewController.xib; sourceTree = "<group>"; };
+		719AE3A91FAAC457009DC99F /* UIView+YXTTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YXTTransform.m"; sourceTree = "<group>"; };
+		719AE3AA1FAAC458009DC99F /* UIView+YXTTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YXTTransform.h"; sourceTree = "<group>"; };
+		719AE3AC1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolChangeBGColorOrImageViewController.h; sourceTree = "<group>"; };
+		719AE3AD1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolChangeBGColorOrImageViewController.m; sourceTree = "<group>"; };
+		719AE3AE1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolChangeBGColorOrImageViewController.xib; sourceTree = "<group>"; };
 		71E037F51FA827B9000BE00C /* ToolPieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolPieChartViewController.h; sourceTree = "<group>"; };
 		71E037F61FA827B9000BE00C /* ToolPieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolPieChartViewController.m; sourceTree = "<group>"; };
 		71E037F71FA827B9000BE00C /* ToolPieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolPieChartViewController.xib; sourceTree = "<group>"; };
@@ -854,6 +867,7 @@
 		711927F71FA817480007059E /* ToolViewController */ = {
 			isa = PBXGroup;
 			children = (
+				711A98741FA9D2A000A96552 /* ToolAnimationViewController */,
 				711A98351FA968FE00A96552 /* ToolApplyTypeVacationViewController */,
 				71E0380D1FA871C3000BE00C /* ToolMenuViewController */,
 				71E037FA1FA827EA000BE00C /* ToolSegmentViewController */,
@@ -893,6 +907,21 @@
 				711A98531FA9761900A96552 /* YZPickerView.m */,
 			);
 			path = PickerView;
+			sourceTree = "<group>";
+		};
+		711A98741FA9D2A000A96552 /* ToolAnimationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				711A98751FA9D3D000A96552 /* ToolCALayerAnimationViewController.h */,
+				711A98761FA9D3D000A96552 /* ToolCALayerAnimationViewController.m */,
+				711A98771FA9D3D000A96552 /* ToolCALayerAnimationViewController.xib */,
+				719AE3AC1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.h */,
+				719AE3AD1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.m */,
+				719AE3AE1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.xib */,
+				719AE3AA1FAAC458009DC99F /* UIView+YXTTransform.h */,
+				719AE3A91FAAC457009DC99F /* UIView+YXTTransform.m */,
+			);
+			path = ToolAnimationViewController;
 			sourceTree = "<group>";
 		};
 		71E037ED1FA82627000BE00C /* Tool */ = {
@@ -1112,9 +1141,11 @@
 				711A984D1FA9696100A96552 /* ApplyTwoTableViewCell.xib in Resources */,
 				71E0381C1FA87207000BE00C /* ToolMenuThirdViewController.xib in Resources */,
 				711A983A1FA968FE00A96552 /* YZApplyTypeVacationVC.xib in Resources */,
+				719AE3B01FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.xib in Resources */,
 				711A98481FA9696100A96552 /* ApplyThreeTableViewCell.xib in Resources */,
 				711927EF1FA730E50007059E /* MJRefresh.bundle in Resources */,
 				711924421FA70C300007059E /* Main.storyboard in Resources */,
+				711A98791FA9D3D000A96552 /* ToolCALayerAnimationViewController.xib in Resources */,
 				711A984C1FA9696100A96552 /* ApplyOneTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1197,6 +1228,7 @@
 				711927E71FA730E50007059E /* MJRefreshAutoNormalFooter.m in Sources */,
 				7119243F1FA70C300007059E /* ViewController.m in Sources */,
 				711A98551FA9761A00A96552 /* YZPickerView.m in Sources */,
+				719AE3AB1FAAC458009DC99F /* UIView+YXTTransform.m in Sources */,
 				711927B61FA730E50007059E /* JKVIPAppointmentInfoData.m in Sources */,
 				711927AA1FA730E50007059E /* JKEnterpriseInfoData.m in Sources */,
 				711927F21FA730E50007059E /* UIScrollView+MJExtension.m in Sources */,
@@ -1209,6 +1241,7 @@
 				711927AF1FA730E50007059E /* JKLoginPermissionInfoData.m in Sources */,
 				711927E11FA730E50007059E /* MJRefreshAutoFooter.m in Sources */,
 				711927D51FA730E50007059E /* PiechartDetchView.m in Sources */,
+				719AE3AF1FAB1B19009DC99F /* ToolChangeBGColorOrImageViewController.m in Sources */,
 				711927DB1FA730E50007059E /* MJDIYHeader.m in Sources */,
 				711927DF1FA730E50007059E /* UIImage+Utility.m in Sources */,
 				711927C71FA730E50007059E /* JKVIPAppointmentResponse.m in Sources */,
@@ -1265,6 +1298,7 @@
 				71E037FE1FA827F9000BE00C /* ToolSegmentViewController.m in Sources */,
 				711A984A1FA9696100A96552 /* ApplyTwoTableViewCell.m in Sources */,
 				711927B21FA730E50007059E /* JKOrderInfoData.m in Sources */,
+				711A98781FA9D3D000A96552 /* ToolCALayerAnimationViewController.m in Sources */,
 				711927DD1FA730E50007059E /* UIColor+YZ_App.m in Sources */,
 				711927C51FA730E50007059E /* JKEnterpriseListResponse.m in Sources */,
 				711927D81FA730E50007059E /* UINavigationController+ShouldPopOnBackButton.m in Sources */,
