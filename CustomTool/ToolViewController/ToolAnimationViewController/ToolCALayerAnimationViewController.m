@@ -9,6 +9,7 @@
 #import "ToolCALayerAnimationViewController.h"
 #import "UIView+YXTTransform.h"
 #import "ToolChangeBGColorOrImageViewController.h"
+#import "ToolComplexAnimationViewController.h"
 
 @interface ToolCALayerAnimationViewController ()
 
@@ -38,6 +39,16 @@
     pieChartBtn.layer.masksToBounds = YES;
     [pieChartBtn addTarget:self action:@selector(pushToChangeBGColorOrImage) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:pieChartBtn];
+
+    UIButton * complexAnimationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [complexAnimationBtn setFrame:CGRectMake(0, 0, 200, 50)];
+    [complexAnimationBtn setCenter:CGPointMake(SCREEN_WID/2, SCREEN_HEI/2 - 180)];
+    [complexAnimationBtn setTitle:@"酷炫动画" forState:UIControlStateNormal];
+    [complexAnimationBtn setBackgroundColor:[UIColor grayColor]];
+    complexAnimationBtn.layer.cornerRadius = 4;
+    complexAnimationBtn.layer.masksToBounds = YES;
+    [complexAnimationBtn addTarget:self action:@selector(pushToComplexAnimation) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:complexAnimationBtn];
 
 }
 
@@ -187,6 +198,13 @@
     ToolChangeBGColorOrImageViewController * changeBG = [[ToolChangeBGColorOrImageViewController alloc] init];
     [self.navigationController pushViewController:changeBG animated:YES];
 
+}
+
+- (void)pushToComplexAnimation {
+    
+    ToolComplexAnimationViewController * complexAnimationVC = [[ToolComplexAnimationViewController alloc] init];
+    [self.navigationController pushViewController:complexAnimationVC animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
